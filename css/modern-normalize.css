@@ -1,0 +1,55 @@
+/*
+  Placeholder for modern-normalize.css
+
+  Download the real, up-to-date file from:
+  https://raw.githubusercontent.com/sindresorhus/modern-normalize/main/modern-normalize.css
+
+  and replace the contents of this file with it before shipping the project.
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+}
+
+body {
+  margin: 0;
+}
+
+hr {
+  height: 0;
+  color: inherit;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono",
+    Menlo, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}

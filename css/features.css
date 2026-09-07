@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Features
+   ========================================================================== */
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-item {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.features-subtitle {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-dark);
+}
+
+.features-text {
+  font-size: 16px;
+  line-height: 1.5;
+}

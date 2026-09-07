@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header {
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-secondary);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  margin-right: 76px;
+}
+
+.logo-accent {
+  color: var(--color-primary-brand);
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 500;
+  color: var(--color-dark);
+  transition: color 250ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-pressed-state);
+}
+
+.nav-link-active {
+  color: var(--color-pressed-state);
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
+.address-link {
+  color: var(--color-text);
+  transition: color 250ms ease;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--color-pressed-state);
+}

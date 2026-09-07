@@ -1,0 +1,334 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+:root {
+  --color-primary-brand: #4d5ae5;
+  --color-pressed-state: #404bbf;
+  --color-dark: #2e2f42;
+  --color-success: #31d0aa;
+  --color-text: #434455;
+  --color-subtle-text: #8e8f99;
+  --color-accent: #e7e9fc;
+  --color-light: #f4f4fd;
+  --color-modal-overlay: #2e2f42;
+  --color-hero-background: #2e2f42;
+  --color-white-background: #ffffff;
+  --color-modal-background: #fcfcfc;
+
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Raleway", sans-serif;
+
+  --container-width: 1158px;
+  --section-padding: 120px;
+}
+
+/* ==========================================================================
+   Base / Resets
+   ========================================================================== */
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  background-color: var(--color-white-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+.container {
+  width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--color-dark);
+  margin-bottom: 72px;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header {
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-secondary);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  margin-right: 76px;
+}
+
+.logo-accent {
+  color: var(--color-primary-brand);
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 500;
+  color: var(--color-dark);
+  transition: color 250ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-pressed-state);
+}
+
+.nav-link-active {
+  color: var(--color-pressed-state);
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
+.address-link {
+  color: var(--color-text);
+  transition: color 250ms ease;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--color-pressed-state);
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background-color: var(--color-hero-background);
+  text-align: center;
+}
+
+.hero-title {
+  max-width: 496px;
+  margin: 0 auto 48px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  color: var(--color-white-background);
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 16px 32px;
+  min-width: 169px;
+  border-radius: 4px;
+  background-color: var(--color-primary-brand);
+  color: var(--color-white-background);
+  font-weight: 500;
+  transition: background-color 250ms ease;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--color-pressed-state);
+}
+
+/* ==========================================================================
+   Features
+   ========================================================================== */
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-item {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.features-subtitle {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-dark);
+}
+
+.features-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   Team
+   ========================================================================== */
+
+.team {
+  background-color: var(--color-light);
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  background-color: var(--color-white-background);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
+    0 1px 6px rgba(46, 47, 66, 0.08);
+  overflow: hidden;
+}
+
+.team-card-content {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.team-name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-dark);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   Portfolio preview
+   ========================================================================== */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+.portfolio-item-title {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-dark);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--color-hero-background);
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  max-width: 264px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-accent);
+}
