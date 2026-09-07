@@ -1,16 +1,21 @@
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-
 .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: var(--color-hero-background);
+  padding: 100px 0;
+  background-color: var(--color-dark);
 }
 
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+  font-family: var(--font-secondary);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--color-light);
+}
+
+.footer-logo-accent {
+  color: var(--color-success);
 }
 
 .footer-text {

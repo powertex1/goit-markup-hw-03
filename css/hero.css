@@ -1,11 +1,13 @@
-/* ==========================================================================
-   Hero
-   ========================================================================== */
-
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
-  background-color: var(--color-hero-background);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 188px 0;
+  background-color: var(--color-dark);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/hero/hero-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
 }
 
@@ -15,18 +17,24 @@
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
-  color: var(--color-white-background);
+  letter-spacing: 0.02em;
+  color: var(--color-white);
 }
 
 .hero-button {
-  display: inline-block;
-  padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
   min-width: 169px;
+  padding: 16px 32px;
   border-radius: 4px;
-  background-color: var(--color-primary-brand);
-  color: var(--color-white-background);
+  font-family: inherit;
+  font-size: 16px;
   font-weight: 500;
-  transition: background-color 250ms ease;
+  line-height: 1.19;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  background-color: var(--color-primary-brand);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
